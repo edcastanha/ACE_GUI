@@ -61,7 +61,7 @@ async def build_main_view(page: ft.Page, state: AppState) -> None:
             ft.Row(
                 [
                     ft.Text("Mods", size=22, weight=ft.FontWeight.BOLD),
-                    ft.ElevatedButton(
+                    ft.Button(
                         "Install Mod",
                         icon=ft.icons.Icons.UPLOAD_FILE,
                         on_click=install_mod_click,
@@ -155,7 +155,7 @@ async def build_main_view(page: ft.Page, state: AppState) -> None:
             ft.Row(
                 [
                     ft.Text("Liveries", size=22, weight=ft.FontWeight.BOLD),
-                    ft.ElevatedButton(
+                    ft.Button(
                         "Install Livery",
                         icon=ft.icons.Icons.UPLOAD_FILE,
                         on_click=install_livery_click,

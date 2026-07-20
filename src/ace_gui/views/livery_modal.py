@@ -45,7 +45,7 @@ class LiveryCarModal:
             on_change=lambda e: self._filter(e.control.value, all_cars_list),
         )
 
-        install_btn = ft.ElevatedButton("Install", disabled=True)
+        install_btn = ft.Button("Install", disabled=True)
 
         all_cars_list.controls.clear()
         for car in self.cars:
@@ -123,7 +123,7 @@ class LiveryCarModal:
     def _select_car(
         self,
         car: CarInfo,
-        btn: ft.ElevatedButton,
+        btn: ft.Button,
     ) -> None:
         self.selected_car = car
         btn.disabled = False

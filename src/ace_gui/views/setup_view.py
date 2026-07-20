@@ -88,7 +88,7 @@ async def build_setup_view(page: ft.Page, state: AppState) -> None:
                     ft.Row(
                         [
                             path_field,
-                            ft.ElevatedButton(
+                            ft.Button(
                                 "Browse",
                                 icon=ft.icons.Icons.FOLDER_OPEN,
                                 on_click=browse_click,
@@ -98,7 +98,7 @@ async def build_setup_view(page: ft.Page, state: AppState) -> None:
                     ),
                     status_text,
                     ft.Container(height=20),
-                    ft.ElevatedButton(
+                    ft.Button(
                         "Confirm",
                         icon=ft.icons.Icons.CHECK,
                         on_click=confirm_click,

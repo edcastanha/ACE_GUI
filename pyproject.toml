@@ -19,3 +19,13 @@ build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = [
+    "playwright: tests that require Playwright browser automation",
+]
+
+[dependency-groups]
+dev = [
+    "playwright>=1.61.0",
+    "pytest-asyncio>=1.4.0",
+    "pytest-playwright>=0.8.0",
+]
