@@ -1,10 +1,9 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import TYPE_CHECKING, Optional
+from typing import Optional
 
-if TYPE_CHECKING:
-    import flet as ft
+import flet as ft
 
 from ace_gui.config_manager import ConfigManager
 from ace_gui.storage_manager import StorageManager

@@ -32,4 +32,4 @@ async def main(page: ft.Page) -> None:
     await state.navigate_to("setup")
 
 
-ft.app(target=main)
+ft.run(main)

@@ -99,7 +99,7 @@ async def build_main_view(page: ft.Page, state: AppState) -> None:
     livery_file_picker = ft.FilePicker()
 
     async def install_mod_click(e) -> None:
-        mod_file_picker.pick_files(allowed_extensions=["spkg"])
+        await mod_file_picker.pick_files(allowed_extensions=["spkg"])
 
     async def on_mod_picked(e: ft.FilePickerResultEvent) -> None:
         if not e.files or not e.files[0].path:
@@ -214,7 +214,7 @@ async def build_main_view(page: ft.Page, state: AppState) -> None:
         page.update()
 
     async def install_livery_click(e) -> None:
-        livery_file_picker.pick_files(allowed_extensions=["zip"])
+        await livery_file_picker.pick_files(allowed_extensions=["zip"])
 
     async def on_livery_picked(e: ft.FilePickerResultEvent) -> None:
         if not e.files or not e.files[0].path:

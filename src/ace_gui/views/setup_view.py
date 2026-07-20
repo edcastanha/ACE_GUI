@@ -45,7 +45,7 @@ async def build_setup_view(page: ft.Page, state: AppState) -> None:
     page.update()
 
     async def browse_click(e) -> None:
-        file_picker.get_directory_path()
+        await file_picker.get_directory_path()
 
     async def confirm_click(e) -> None:
         path_str = path_field.value.strip()
@@ -107,7 +107,7 @@ async def build_setup_view(page: ft.Page, state: AppState) -> None:
                 width=600,
                 horizontal_alignment=ft.CrossAxisAlignment.CENTER,
             ),
-            alignment=ft.alignment.center,
+            alignment=ft.alignment.Alignment.CENTER,
             expand=True,
         )
     )
