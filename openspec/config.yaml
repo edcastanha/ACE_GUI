@@ -1,0 +1,12 @@
+project: ACE_GUI
+description: "Multiplatform desktop app for Assetto Corsa Evo mod and livery management"
+language: python
+stack:
+  - flet  # UI layer (consider PySide6 as fallback)
+  - pathlib  # path operations
+  - zipfile  # extraction
+  - json  # config parsing
+domains:
+  - caminhos: Path detection and mapping
+  - instalacao: Mod (.spkg) and livery (.zip) installation
+  - remocao: Clean uninstall of installed content
