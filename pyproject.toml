@@ -1,0 +1,21 @@
+[project]
+name = "ace-gui"
+version = "0.1.0"
+description = "ACE GUI - A graphical interface for ACE"
+requires-python = ">=3.10"
+dependencies = [
+    "flet",
+    "platformdirs",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
