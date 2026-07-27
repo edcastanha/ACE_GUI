@@ -28,7 +28,7 @@ class AppState:
         if view_name == "setup":
             from ace_gui.views.setup_view import build_setup_view
 
-            await build_main_view(self.page, self)
+            await build_setup_view(self.page, self)
         elif view_name == "main":
             from ace_gui.views.main_view import build_main_view
 
